@@ -1,0 +1,13 @@
+# Dockerfile.gcc — full toolchain
+FROM ubuntu:22.04
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc g++ gdb make cmake \
+    libsndfile1-dev \
+    portaudio19-dev \
+    curl ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace
+
+CMD ["/bin/bash"]

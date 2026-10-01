@@ -1,0 +1,14 @@
+build*/
+build_check/
+*.obj
+*.exe
+*.lib
+*.exp
+*.zip
+*.wasm
+vst3sdk/
+_analysis_report.txt
+continuazione.txt
+acid_synth_linux
+dist_mac/
+tests/bin/
